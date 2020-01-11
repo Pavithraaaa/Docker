@@ -1,0 +1,6 @@
+FROM ubuntu:latest
+RUN apt-get update && \
+    apt-get install zip -y
+WORKDIR /app
+ADD zipper_file.sh /tmp
+CMD ["/bin/bash","/tmp/zipper_file.sh"]
