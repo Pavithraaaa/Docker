@@ -1,0 +1,4 @@
+FROM ubuntu:latest
+WORKDIR /app
+RUN touch file.txt
+CMD echo "hello world" >> file.txt
